@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //retribuidos
     let C = 0;
     C = 10;
-    console.log(C)
+    // console.log(C)
 
     const notaMedia = 6;
 
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const professor = "joão";
     if (professor == "lucas") {
-       console.log("sim é lucas")
+     //  console.log("sim é lucas")
     } else {
-       console.log("não é lucas")
+     //  console.log("não é lucas")
     
     }
 
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let priemiroArray = [ 'Lucas', 'João', 'Paulo', 'Marcos'];
 
-    console.log(priemiroArray[3]); // Número 2 para percorrer o array
+    //console.log(priemiroArray[3]); // Número 2 para percorrer o array
 
     // ----------------------/------------------
 
@@ -104,7 +104,19 @@ document.addEventListener('DOMContentLoaded', function () {
         profissao: "Programadora",
 
     }
-        console.log(pessoa["idade"])
+       // console.log(pessoa["idade"])
+
+        // ---------------/--------------
+
+        const numeros =["A", "B", "C", "D"]
+
+        numeros.forEach(num => {
+            console.log(num) 
+
+
+
+        })
+
 
 
 
