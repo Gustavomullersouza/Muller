@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //retribuidos
     let C = 0;
     C = 10;
-    console.log(C)
+    // console.log(C)
 
     const notaMedia = 6;
 
@@ -58,11 +58,68 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const professor = "joão";
     if (professor == "lucas") {
-        console.log("sim é lucas")
+     //  console.log("sim é lucas")
     } else {
-        console.log("não é lucas")
+     //  console.log("não é lucas")
     
     }
+
+
+    // ------------------ / --------------------
+
+    //funções são blocos de código que podem ser chamados e
+    // reutilizados
+    // Dentro dos parenteses da função vai os parâmetros
+
+     
+    function primeiraFuncao(parametro, segundoParamentro) {
+         return parametro + ' ,' + segundoParamentro; //variáveis concatenadas(+)
+                
+    }
+
+    const parametro = "Essa é uma função com parâmetro";
+    const segundoParamentro = "agora com dois parâmetros";
+
+
+    // console.log(primeiraFuncao(parametro, segundoParamentro ))
+
+    // ----------------- / -------------------
+
+    //arrays em javascript são estruturas de dados que permitem
+    //armazenar uma coleção ordenada de elementos.
+
+    let priemiroArray = [ 'Lucas', 'João', 'Paulo', 'Marcos'];
+
+    //console.log(priemiroArray[3]); // Número 2 para percorrer o array
+
+    // ----------------------/------------------
+
+    // Os obejtos são coleções NÃO ORDENADAS de
+    //pares chave-valor, onde cada valor é associado
+    //a uma chave única
+
+    let pessoa = {
+        nome: "Maria", 
+        idade: "22",
+        profissao: "Programadora",
+
+    }
+       // console.log(pessoa["idade"])
+
+        // ---------------/--------------
+
+        const numeros =["A", "B", "C", "D"]
+
+        numeros.forEach(num => {
+            console.log(num) 
+
+
+
+        })
+
+
+
+
 
 
 
