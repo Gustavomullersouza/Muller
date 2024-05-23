@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
         const baseImagens = {
-            todas: ['imagem.png', 'cidade.jpg', 'animal.jpg', 'natureza.jpg'],
-            natureza: ['naturaza.jpg'],
+            todas: ['imagem.png', 'cidade.jpg', 'animais.jpg', 'natureza.jpg'],
+            natureza: ['natureza.jpg'],
             cidade: ['cidade.jpg'],
             animais: ['animais.jpg'],
             
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             imagens.forEach(img => {
                 console.log(img);
-                galeria.innerHTML = '<div> <img src="imagens/'+img+' " /> </div>';
+                galeria.innerHTML += '<div> <img src="imagens/'+img+' " /> </div>';
 
               })
 
