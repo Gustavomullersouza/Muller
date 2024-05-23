@@ -8,6 +8,21 @@ document.addEventListener('DOMContentLoaded', function () {
             animais: ['animais.jpg'],
             
         }
+        
+        function carregaImagens(){
+            //Selecionar elementos HTML com basse em um seletor
+            const galeria = document.querySelector("#GALERIA-IMAGENS");
+
+            const imagens = baseImagens["todas"];
+
+            imagens.forEach(img => {
+                console.log(img);
+                galeria.innerHTML = '<div> <img src="imagens/'+img+' " /> </div>';
+
+              })
+
+        }
+
 
     // Evento de clique
     document.body.addEventListener('click', function(event) {
@@ -19,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
     })
+
+    carregaImagens();
 
 
 
