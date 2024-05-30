@@ -16,13 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
             const imagens = baseImagens[categoria];
 
             imagens.forEach(img => {
-                console.log(img);
-                galeria.innerHTML += '<div> <img src="imagens/'+img+' " /> </div>';
+                galeria.innerHTML += '<div class="imagem-item" > <img src="imagens/'+img+' " /> </div>';
 
               })
+              
+        }
+        function ordenaImagens(ordem){
+
+            const imagens = Array.from(document.querySelectorAll("#galeria-imagens .imagem-item")) 
+
+            imagens.sort((a, b) => {
+                console.log(a);
+
+            })
+
 
         }
-        carregaImagens('todas');
 
     // Evento de clique
     document.body.addEventListener('click', function(event) {
@@ -36,20 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
             
             carregaImagens(categoria);
         }
+        if(event.target.classList.contains('botao-ordenar')){
+            const ordem = event.target.dataset.ordem;
+            ordenaImagens(ordem);
+    
+        }
+    
     
     })
-
+    carregaImagens('todas');
     
-
-
-
-
-
-
-
-
-
-
-
-
 } ) 
