@@ -30,14 +30,14 @@ header{
 }
 
 
-#GALERIA-IMAGENS{
+#galeria-imagens{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
 
-#GALERIA-IMAGENS img{
+#galeria-imagens img{
     max-width: 100%;
 
 }
